@@ -21,6 +21,7 @@ knn::~knn()
     // LoL
 }
 
+/*
 void knn::find_k_nearest(data *query_point)
 {
     neighbors = new std::vector<data *>;
@@ -54,6 +55,7 @@ void knn::find_k_nearest(data *query_point)
         neighbors->push_back(training_data->at(distances[i].second));
     }
 }
+*/
 
 void knn::set_training_data(std::vector<data *> *vect)
 {
@@ -159,7 +161,7 @@ double knn::validate_performance()
         }
         
         data_index++;
-        //printf("Current Performance = %.3f %%\n",((double)count*100.0) /((double)data_index));
+        printf("Current Performance = %.3f %%\n",((double)count*100.0) /((double)data_index));
     }
     current_performance = ((double)count*100.0) /((double)validation_data->size());
     printf("Validation Performance for K = %d => %.3f %%\n", k , current_performance);
