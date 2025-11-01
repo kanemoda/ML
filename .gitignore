@@ -9,6 +9,10 @@ lib/
 *.out
 *.exe
 main
+KNN/main         
+KNN/build/       
+KNN/*.out
+KNN/*.exe
 
 # =====================================
 # Dataset files (MNIST)
